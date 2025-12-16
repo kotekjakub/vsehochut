@@ -8,6 +8,7 @@ export interface CafeData {
   reviewCount: number;
   googleMapsLink: string;
   instagramLink: string;
+  facebookLink: string;
   openingHours: {
     weekdays: string;
     weekend: string;
@@ -24,6 +25,7 @@ export const CAFE_DATA: CafeData = {
   reviewCount: 923,
   googleMapsLink: "https://www.google.com/maps/search/?api=1&query=Café+Všehochut+Jičín",
   instagramLink: "https://www.instagram.com/cafevsehochut/",
+  facebookLink: "https://www.facebook.com/CafeVsehochut/",
   openingHours: {
     weekdays: "7:30 - 19:00",
     weekend: "9:00 - 19:00"

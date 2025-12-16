@@ -1,11 +1,11 @@
 import React from 'react';
-import { Phone, MapPin, AlertTriangle, Instagram, Clock } from 'lucide-react';
+import { Phone, MapPin, AlertTriangle, Instagram, Clock, Facebook } from 'lucide-react';
 import { CAFE_DATA } from '../types';
 import { Button } from './Button';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-cafe-black text-white pt-24 pb-12 rounded-t-[3rem] mt-[-3rem] relative z-20">
+    <footer id="footer" className="bg-cafe-black text-white pt-24 pb-12 rounded-t-[3rem] mt-[-3rem] relative z-20">
       <div className="container mx-auto px-6">
         
         {/* Warning Section */}
@@ -68,15 +68,27 @@ export const Footer: React.FC = () => {
                 </div>
               </a>
 
-              <a href={CAFE_DATA.instagramLink} target="_blank" rel="noreferrer" className="flex items-start gap-4 hover:text-pink-500 transition-colors group">
-                <div className="bg-stone-800 p-3 rounded-full group-hover:bg-pink-600 group-hover:text-white transition-colors">
-                  <Instagram className="w-6 h-6" />
-                </div>
-                <div>
-                  <p className="font-bold">Sledujte nás</p>
-                  <p className="text-stone-400">@cafevsehochut</p>
-                </div>
-              </a>
+              <div className="flex flex-col sm:flex-row gap-8">
+                <a href={CAFE_DATA.instagramLink} target="_blank" rel="noreferrer" className="flex items-start gap-4 hover:text-pink-500 transition-colors group">
+                  <div className="bg-stone-800 p-3 rounded-full group-hover:bg-pink-600 group-hover:text-white transition-colors">
+                    <Instagram className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="font-bold">Instagram</p>
+                    <p className="text-stone-400">@cafevsehochut</p>
+                  </div>
+                </a>
+
+                <a href={CAFE_DATA.facebookLink} target="_blank" rel="noreferrer" className="flex items-start gap-4 hover:text-blue-500 transition-colors group">
+                  <div className="bg-stone-800 p-3 rounded-full group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    <Facebook className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="font-bold">Facebook</p>
+                    <p className="text-stone-400">Café Všehochuť</p>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
 

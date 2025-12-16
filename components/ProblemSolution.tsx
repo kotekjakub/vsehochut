@@ -33,7 +33,7 @@ export const ProblemSolution: React.FC = () => {
                 Řešení
               </h3>
               <p className="text-3xl md:text-4xl font-display font-bold text-cafe-black leading-snug">
-                My jsme odpověď. Jen <span className="underline decoration-cafe-accent decoration-4">skvělý vibe</span> a káva, která má grády.
+                My jsme odpověď. Jen skvělý vibe a káva, která má grády.
               </p>
             </div>
           </div>

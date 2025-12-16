@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, MessageCircle, Instagram } from 'lucide-react';
+import { Star, MessageCircle, Instagram, Facebook } from 'lucide-react';
 import { CAFE_DATA } from '../types';
 
 export const SocialProof: React.FC = () => {
@@ -16,7 +16,7 @@ export const SocialProof: React.FC = () => {
         </div>
 
         {/* Stats Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
           {/* Card 1 */}
           <div className="bg-stone-900/50 border border-stone-800 p-8 rounded-3xl text-center hover:bg-stone-800 transition-colors">
             <Star className="w-12 h-12 text-yellow-400 mx-auto mb-4 fill-yellow-400" />
@@ -25,7 +25,7 @@ export const SocialProof: React.FC = () => {
           </div>
 
           {/* Card 2 */}
-          <div className="bg-stone-900/50 border border-stone-800 p-8 rounded-3xl text-center hover:bg-stone-800 transition-colors transform md:-translate-y-4">
+          <div className="bg-stone-900/50 border border-stone-800 p-8 rounded-3xl text-center hover:bg-stone-800 transition-colors">
             <MessageCircle className="w-12 h-12 text-cafe-accent mx-auto mb-4" />
             <div className="text-6xl font-display font-bold mb-2">{CAFE_DATA.reviewCount}</div>
             <div className="text-stone-400 uppercase tracking-widest font-bold text-sm">Recenzí na Googlu</div>
@@ -52,7 +52,31 @@ export const SocialProof: React.FC = () => {
                  Instagram
               </div>
               <div className="text-stone-300 text-sm group-hover:text-white transition-colors">
-                Sledujte nás pro novinky a atmosféru
+                Sledujte nás pro novinky
+              </div>
+            </div>
+          </a>
+
+          {/* Card 4 - Facebook */}
+          <a 
+            href={CAFE_DATA.facebookLink}
+            target="_blank"
+            rel="noreferrer"
+            className="group bg-gradient-to-br from-blue-900/50 to-indigo-900/50 border border-stone-800 p-8 rounded-3xl text-center hover:border-blue-500/50 transition-all relative overflow-hidden"
+          >
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-indigo-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <div className="relative z-10">
+              <div className="w-20 h-20 mx-auto mb-4 rounded-full p-1 bg-gradient-to-tr from-blue-400 to-blue-600">
+                 <div className="w-full h-full rounded-full border-2 border-black bg-blue-600 flex items-center justify-center">
+                    <Facebook className="w-10 h-10 text-white fill-white" />
+                 </div>
+              </div>
+              <div className="text-2xl font-display font-bold mb-2 flex items-center justify-center gap-2">
+                 <Facebook className="w-6 h-6" />
+                 Facebook
+              </div>
+              <div className="text-stone-300 text-sm group-hover:text-white transition-colors">
+                Připojte se k nám
               </div>
             </div>
           </a>
