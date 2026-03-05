@@ -22,7 +22,7 @@ export const CAFE_DATA: CafeData = {
   zip: "506 01",
   phone: "+420 607 495 399",
   rating: 4.8,
-  reviewCount: 923,
+  reviewCount: 942,
   googleMapsLink: "https://www.google.com/maps/search/?api=1&query=Café+Všehochut+Jičín",
   instagramLink: "https://www.instagram.com/cafevsehochut/",
   facebookLink: "https://www.facebook.com/CafeVsehochut/",
